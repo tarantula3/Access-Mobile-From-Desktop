@@ -2,13 +2,13 @@
 
 Have you ever wanted to access your Android phone from your desktop PC, or create a mobile mining farm like I do? Then let’s get started. 
 
-# Download
-    1. Download the ZIP file from my GitHub repository, the link is in the description below: https://github.com/tarantula3/Access-Mobile-From-Desktop/
+## Download
+    1. Download the ZIP file from my GitHub repository [Download](https://github.com/tarantula3/Access-Mobile-From-Desktop/)
     2. Unzip the folder to a location of your choice on your PC.
     3. Open PowerShell "as Administrator" and run the onscreen/following command to enable all PowerShell scripts to run on your PC:
     Set-ExecutionPolicy Unrestricted
 
-# Enable Developer Mode on Your Phone
+## Enable Developer Mode on Your Phone
     1. Go to Settings
     2. About
     3. Software Information
@@ -16,7 +16,7 @@ Have you ever wanted to access your Android phone from your desktop PC, or creat
     5. Enter your PIN when prompted, this will enable the "Developer Mode"
     6. Next, turn off the "Auto Blocker"
 
-# Enable debugging
+## Enable debugging
     1. Go back to Settings
     2. Navigate to Developer Options:
         Samsung: Tap the back button
@@ -26,13 +26,13 @@ Have you ever wanted to access your Android phone from your desktop PC, or creat
         a. USB Debugging &
         b. Wireless Debugging
 
-# Get the IP of your Mobile
+## Get the IP of your Mobile
     1. Go to Settings
     2. Select Connections > Wi-Fi
     3. Tap the gear/cog icon next to your connected network
     4. Scroll down to view your IP address
 
-# Get Your Phone Ready
+## Get Your Phone Ready
     1. Plug your phone into the PC with a USB cable and approve USB access when prompted. Then unplug it.
     2. Make sure your PC and phone are connected to the same Wi-Fi network.
     3. Open PowerShell in the same directory and run the following commands:
