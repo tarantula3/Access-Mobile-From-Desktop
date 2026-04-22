@@ -47,26 +47,26 @@ Have you ever wanted to access your Android phone from your desktop PC, or creat
 To avoid constantly changing IP addresses when controlling your phones on a regular basis, simply log into your router and set up IP reservation for each device.
 
 
-Errors
-------
-1. unable to connect to <ip addr>:5555: cannot connect to <ip addr>:5555: No connection could be made because the target machine actively refused it. (10061)
-   Reference: https://stackoverflow.com/questions/37267335/android-studio-wireless-adb-error-10061
-    a. stay connect via USB
-    b. connect to your WIFI network (computer and mobile device both)
-    c. ping DeviceIP (must be have ping to your device)
-    d. .\adb kill-server
-    e. .\adb usb
-    f. .\adb tcpip 5555
-    g. unplug usb cable 
-    h. .\adb connect yourDeviceIP
-    i. adb devices (must be see two device names , one of them is by deviceIP) 
 
-2. Device not reachable 
-    a. Ping the IP
-    b. Do a MAC to IP mapping on the router
-
-3. To get updated packages manually download them from developers website:
-    1. SCRCPY (Windows version) : https://github.com/genymobile/scrcpy > Unzip
-    2. SDK Platform-Tools for Windows : https://developer.android.com/tools/releases/platform-tools > Unzip
-    3. Copy SCRCPY into SDK folder 
-    4. Run Powershell from the same folder 
+# Errors
+    1. unable to connect to <ip addr>:5555: cannot connect to <ip addr>:5555: No connection could be made because the target machine actively refused it. (10061)
+       Reference: https://stackoverflow.com/questions/37267335/android-studio-wireless-adb-error-10061
+        a. stay connect via USB
+        b. connect to your WIFI network (computer and mobile device both)
+        c. ping DeviceIP (must be have ping to your device)
+        d. .\adb kill-server
+        e. .\adb usb
+        f. .\adb tcpip 5555
+        g. unplug usb cable 
+        h. .\adb connect yourDeviceIP
+        i. adb devices (must be see two device names , one of them is by deviceIP) 
+    
+    2. Device not reachable 
+        a. Ping the IP
+        b. Do a MAC to IP mapping on the router
+    
+    3. To get updated packages manually download them from developers website:
+        1. SCRCPY (Windows version) : https://github.com/genymobile/scrcpy > Unzip
+        2. SDK Platform-Tools for Windows : https://developer.android.com/tools/releases/platform-tools > Unzip
+        3. Copy SCRCPY into SDK folder 
+        4. Run Powershell from the same folder 
