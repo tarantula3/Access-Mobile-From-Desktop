@@ -33,16 +33,24 @@ Have you ever wanted to access your Android phone from your desktop PC, or creat
     4. Scroll down to view your IP address
 
 ## Get Your Phone Ready
-    1. Plug your phone into the PC with a USB cable and approve USB access when prompted. Then unplug it.
-    2. Make sure your PC and phone are connected to the same Wi-Fi network.
-    3. Open PowerShell in the same directory and run the following commands:
+    1. Make sure your PC and phone are connected to the same Wi-Fi network.
+    2. Plug your phone into the PC with a USB cable and approve USB access when prompted. Then unplug it.    
+    3. Open Terminal from the same folder and type the below commands one by one:
+        a. .\adb kill-server
+        b. .\adb usb
+        c. .\adb tcpip 5555
+    4. Then unplug the usb cable 
+    You need to do this every thime you add a new phone to the setup.
+
+## Accessing Phone From PC
+    1. Open PowerShell in the same directory and run the following commands:
         a. .\adb.exe connect $IP
         b. .\scrcpy.exe $IP
         To control multiple phones at once manually, repeat the below command with different IPs:
         c. .\scrcpy.exe -s 192.168.0.xxx
         d. .\scrcpy.exe -s 192.168.0.yyy
-    4. Easier way: Just right-click on "EnterIP.PS1" and select "Run With PowerShell"
-    5. A window will pop up asking you for your phone's IP - type the IP of your phone in and click OK.
+    2. Easier way: Just right-click on "**EnterIP.PS1**" and select "Run With PowerShell"
+    3. A window will pop up asking you for your phone's IP - type the IP of your phone in and click OK.
 
 To avoid constantly changing IP addresses when controlling your phones on a regular basis, simply log into your router and set up IP reservation for each device.
 
