@@ -40,7 +40,7 @@ Have you ever wanted to access your Android phone from your desktop PC, or creat
         b. .\adb usb
         c. .\adb tcpip 5555
     4. Then unplug the usb cable 
-    You need to do this every thime you add a new phone to the setup.
+    You need to do this every time you add a new phone to the setup.
 
 ## Accessing Phone From PC
     1. Open PowerShell in the same directory and run the following commands:
